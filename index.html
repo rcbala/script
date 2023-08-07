@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two-Player Dice Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="game-container">
+        <h5>LET'S PLAY Dice</h5>
+        <p id="currentPlayer">Player-1 TO PLAY</p> 
+        <div class="players">
+            <div class="player">
+                <h2>Player 1</h2>
+                <div class="dice" id="player1Dice"></div>
+                <p>Score: <span id="player1Score">0</span></p>
+                <button id="player1RollBtn" onclick="rollDice(1)">Roll Dice</button>
+            </div>
+            <div class="player">
+                <h2>Player 2</h2>
+                <div class="dice" id="player2Dice"></div>
+                <p>Score: <span id="player2Score">0</span></p>
+                <button id="player2RollBtn" onclick="rollDice(2)">Roll Dice</button>
+            </div>
+        </div>
+            <div class="dice-image">
+                <img src="/diceImages/dice1.png" alt="">
+            </div>      
+        <button id="resetBtn" onclick="resetGame()">Reset</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
